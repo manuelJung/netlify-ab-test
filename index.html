@@ -19,6 +19,7 @@
       btn.addEventListener('click', () => {
         n = n > 0.5 ? 0 : 1
         nfab.innerHTML = n
+        document.cookie = 'nf_ab='+n
       })
     </script>
   </body>
