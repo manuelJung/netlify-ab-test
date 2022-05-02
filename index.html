@@ -6,5 +6,20 @@
   </head>
   <body>
     <h1 id="title">loading..</h1>
+    <p id="nf-ab"></p>
+    <button id="btn">change</button>
+
+
+    <script>
+      let n = parseFloat(document.cookie.split('=')[1])
+      const nfab = document.getElementById('nf-ab')
+      nfab.innerHTML = n
+
+      const btn = document.getElementById('btn')
+      btn.addEventListener('click', () => {
+        n = n > 0.5 ? 0 : 1
+        nfab.innerHTML = n
+      })
+    </script>
   </body>
 </html>
