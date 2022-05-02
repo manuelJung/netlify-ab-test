@@ -12,6 +12,7 @@ function docReady(fn) {
   }
 } 
 
+
 docReady(() => {
   document.getElementById('title').innerHTML = '---- A ----'
 })
